@@ -2,15 +2,14 @@ cask "yardlet" do
   version "0.11.0"
   sha256 "3b07ba32996324eb40c87020be3b0d4c3836bec2ca424d9c1ed56a8acdbaa944"
 
-  url "https://github.com/zzunkie/yardlet/releases/download/v#{version}/Yardlet-#{version}.dmg",
-      verified: "github.com/zzunkie/yardlet/"
+  url "https://github.com/zzunkie/yardlet/releases/download/v#{version}/Yardlet-#{version}.dmg"
   name "Yardlet"
   desc "Native app for running coding agents side by side"
   homepage "https://yardlet.app/"
 
   livecheck do
     url "https://yardlet.app/appcast.xml"
-    strategy :sparkle
+    strategy :sparkle, &:short_version
   end
 
   auto_updates true
