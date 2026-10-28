@@ -1,6 +1,6 @@
 cask "yardlet" do
-  version "0.11.2"
-  sha256 "67eeb5ad01facfbb3ca7b7c0d0392a9e238a77a066a887fbf1964fe36087b06f"
+  version "0.11.3"
+  sha256 "1575d8bfc0110a4cdcb6939ce9edb7cb4b14fa41bfe335e886535a5da08a1a91"
 
   url "https://github.com/zzunkie/yardlet/releases/download/v#{version}/Yardlet-#{version}.dmg"
   name "Yardlet"
