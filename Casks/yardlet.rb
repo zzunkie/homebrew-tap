@@ -1,8 +1,11 @@
 cask "yardlet" do
-  version "0.11.8"
-  sha256 "074f179c5cce1ca085bee2eeae0777abffa488a0557b2cf544d41bcfb9fe9af0"
+  arch intel: "-x86_64"
 
-  url "https://github.com/zzunkie/yardlet/releases/download/v#{version}/Yardlet-#{version}.dmg"
+  version "0.11.8"
+  sha256 arm:   "074f179c5cce1ca085bee2eeae0777abffa488a0557b2cf544d41bcfb9fe9af0",
+         intel: "0000000000000000000000000000000000000000000000000000000000000000"
+
+  url "https://github.com/zzunkie/yardlet/releases/download/v#{version}/Yardlet-#{version}#{arch}.dmg"
   name "Yardlet"
   desc "Native app for running coding agents side by side"
   homepage "https://yardlet.app/"
@@ -13,7 +16,6 @@ cask "yardlet" do
   end
 
   auto_updates true
-  depends_on arch: :arm64
   depends_on macos: :sequoia
 
   app "Yardlet.app"
