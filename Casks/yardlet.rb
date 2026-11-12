@@ -7,7 +7,7 @@ cask "yardlet" do
 
   url "https://github.com/zzunkie/yardlet/releases/download/v#{version}/Yardlet-#{version}#{arch}.dmg"
   name "Yardlet"
-  desc "Native app for running coding agents side by side"
+  desc "Lightweight, non-intrusive, yet versatile ADE for Claude Code and Codex"
   homepage "https://yardlet.app/"
 
   livecheck do
