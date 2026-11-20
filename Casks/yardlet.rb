@@ -1,9 +1,9 @@
 cask "yardlet" do
   arch intel: "-x86_64"
 
-  version "0.11.12"
-  sha256 arm:   "0356092c775d845981eb00663239adfd2091ce024f653641add6032f8d29bb2b",
-         intel: "df9a7dac7e874fa7bbcfb042a4d0c5143f9fe21556664285d290eb378a0a27d2"
+  version "0.11.13"
+  sha256 arm:   "a6dce5fc0ba5bfda31f1ccb9efd50c56f302e58dc1ff14e2211956599d8c5d31",
+         intel: "15a5989fb062e7db9ba190725fff2fd075589fcdddba2f5e95c48f92bdf05e56"
 
   url "https://github.com/zzunkie/yardlet/releases/download/v#{version}/Yardlet-#{version}#{arch}.dmg"
   name "Yardlet"
