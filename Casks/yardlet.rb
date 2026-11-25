@@ -1,11 +1,11 @@
 cask "yardlet" do
-  arch intel: "-x86_64"
+  arch arm: "arm64", intel: "x86_64"
 
   version "0.11.16"
   sha256 arm:   "27ae422deef07e0134020c2a0180cfb3873cd673ff3011059172dce6456af60a",
          intel: "1e2af6d53fa7bcc7746fbcc69bab332a673b8b2d024de13eb077e1e41654a140"
 
-  url "https://github.com/zzunkie/yardlet/releases/download/v#{version}/Yardlet-#{version}#{arch}.dmg"
+  url "https://dl.yardlet.app/homebrew/#{arch}/#{version}"
   name "Yardlet"
   desc "Lightweight, non-intrusive, yet versatile ADE for Claude Code and Codex"
   homepage "https://yardlet.app/"
