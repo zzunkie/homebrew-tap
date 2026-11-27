@@ -1,9 +1,9 @@
 cask "yardlet" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.11.17"
-  sha256 arm:   "0d1bdcc75f7f29414e375c3735f2aeeb93e4b0ba4dd8c26f68fdd8c81049f467",
-         intel: "8235835605f76d6692e2937cec5ca4189804fe61fc315c8f3ebae96fbb1dc774"
+  version "0.11.18"
+  sha256 arm:   "762e3632f77775bdafab04e06eab7e37844e299bb24bf68788e3ab0852fc6bc7",
+         intel: "5289c286eb4cc86461dd8674a1ac43fb186e22f98e00e863745dbc763d43cb5c"
 
   url "https://dl.yardlet.app/homebrew/#{arch}/#{version}"
   name "Yardlet"
